@@ -957,7 +957,8 @@ section {
   text-align:justify;
 }
 .events .event-img {
-  width: 40%;
+  width: 450px;
+  height:350px;
 }
 
 .events .event-background {
