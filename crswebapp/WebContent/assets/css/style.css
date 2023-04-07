@@ -480,15 +480,21 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 
 .section-title h2 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   position: relative;
   color: #222222;
+  padding-bottom: 15px;
+}
+
+.section-title h2 span {
+  color: #ffb03b;
 }
 
 .section-title h2::before,
@@ -932,10 +938,71 @@ section {
 .events .section-title h2 {
   color: #fff;
 }
-
+.events .section-content {
+  padding-left:10px;
+}
 
 .events .container {
   position: relative;
+}
+
+.events .icon-boxes {
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .events .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: #fff;
+  }
+}
+
+.events .icon-box {
+  padding: 20px 10px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(13,110,253,.25);
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.events .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.events .icon-box .title a {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.events .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 38px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.events .icon-box:hover {
+  background: #009786;
+}
+
+.events .icon-box:hover .title a,
+.events .icon-box:hover .icon {
+  color: #fff;
 }
 
 @media (min-width: 1024px) {
@@ -952,13 +1019,14 @@ section {
 .events .event-item {
   color: #fff;
   padding-top: 100px;
-  padding-left:20px;
+  padding-left:10px;
   font-size: 12px;
   text-align:justify;
 }
 .events .event-img {
   width: 450px;
   height:350px;
+  padding-top:30px;
 }
 
 .events .event-background {
