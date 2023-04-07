@@ -390,7 +390,7 @@ h6 {
   color: #fff;
 }
 
-#hero .animated {
+#events .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -405,7 +405,7 @@ h6 {
     height: 100vh;
   }
 
-  #hero .animated {
+  #events .animated {
     -webkit-animation: none;
     animation: none;
   }
@@ -965,7 +965,7 @@ section {
   padding: 20px 10px;
   position: relative;
   overflow: hidden;
-  background: rgba(13,110,253,.25);
+  background: #198754bf;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1103,7 +1103,7 @@ section {
   padding: 30px 30px 30px 60px;
   margin: 30px 15px;
   min-height: 200px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 10px 20px rgba(24, 54, 163, 59);
   position: relative;
   background: #fff;
 }

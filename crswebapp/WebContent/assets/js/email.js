@@ -24,7 +24,7 @@ app.controller("sendEmailCtrl", function($scope , $http) {
 		 };
 		 $http({
              method : 'POST',
-             url : '/sendMail',
+             url : 'https://localhost:8080/sendMail',
              headers: {'Content-Type' : 'application/json'},
              data: formData
          }).then(function successCallback(response) {
