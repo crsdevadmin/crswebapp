@@ -7,7 +7,7 @@
   <name>crs admin project</name>
   <description>crs admin project</description>
   <properties><java.version>1.8</java.version> </properties>
-
+  <packaging>war</packaging>
 
 
   <parent>
@@ -38,9 +38,20 @@
 </dependency>
 	<dependency>  
 		<groupId>org.springframework.boot</groupId>  
-		<artifactId>spring-boot-starter-web</artifactId>  
+		<artifactId>spring-boot-starter-web</artifactId>
+		<exclusions>
+        <exclusion>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+    </exclusions>  
 	</dependency>  
-	
+	<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+
+	<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-log4j2</artifactId>
+</dependency>
 	<dependency>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-test</artifactId>
@@ -64,6 +75,7 @@
 	</dependency>
   </dependencies>
   <build>
+  <finalName>ROOT</finalName>
   <plugins>
  	 <plugin>
     	<groupId>org.springframework.boot</groupId>
