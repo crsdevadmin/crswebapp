@@ -484,10 +484,10 @@ section {
 }
 
 .section-title h2 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
-  text-transform: uppercase;
+ /*text-transform: uppercase;*/
   position: relative;
   color: #222222;
   padding-bottom: 15px;
@@ -965,7 +965,7 @@ section {
   padding: 20px 10px;
   position: relative;
   overflow: hidden;
-  background: #198754bf;
+  background: #ffb03b;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -979,6 +979,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  font-family: cursive;
 }
 
 .events .icon-box .title a {
@@ -1020,13 +1021,14 @@ section {
   color: #fff;
   padding-top: 100px;
   padding-left:10px;
-  font-size: 12px;
+  font-size: 21px;
   text-align:justify;
+  font-family: monospace;
 }
 .events .event-img {
   width: 450px;
   height:350px;
-  padding-top:30px;
+  padding-top:10px;
 }
 
 .events .event-background {
