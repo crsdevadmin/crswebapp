@@ -1,4 +1,5 @@
-var app = angular.module("sendEmail", []);
+
+var app = angular.module("sendEmailApp", []);
 
 
 //Controller Part for Login Page
@@ -8,11 +9,11 @@ app.controller("sendEmailCtrl", function($scope , $http) {
 	$scope.sendEmail = function() {
 		if(angular.isUndefined($scope.name) || $scope.name === null || $scope.name === ""){
 			$scope.emailMsg = "Please enter the name";
-			EmailErrorMessageDIV=true;
+			$scope.EmailErrorMessageDIV=true;
 			return;
 		}if(angular.isUndefined($scope.email) || $scope.email === null || $scope.email === ""){
 			$scope.emailMsg = "Please enter the email";
-			EmailErrorMessageDIV=true;
+			$scope.EmailErrorMessageDIV=true;
 			return;
 		}
 
@@ -23,21 +24,27 @@ app.controller("sendEmailCtrl", function($scope , $http) {
 				 
 		 };
 		 $http({
-             method : 'POST',
-             url : 'https://localhost:8080/sendMail',
-             headers: {'Content-Type' : 'application/json'},
+			 method : 'POST',
+             url : 'http://localhost:8080/crsbackend/sendMail',
+             headers: [{'Content-Type' : 'application/json'},{'Accept' : '*/*'}],
              data: formData
          }).then(function successCallback(response) {
+        		 
         	 var responsepac = JSON.parse(JSON.stringify(response.data));
+        		 
         	 $scope.status = responsepac.success;
+        		 
         	 if($scope.status === true){
-        		 window.location.href = '/home.html';
+        		 $scope.EmailErrorMessageDIV=false;
+        		 $scope.EmailSuccessMessageDIV = true;
+				 $scope.emailMsg = responsepac.data;
         	 }else{
         		 $scope.emailMsg = responsepac.exception.message;	 
         	 }
          	 
         	 
          }, function errorCallback(response) {
+			 console.log(response.data);
         	 $scope.emailMsg = 'no response from backend';
         	 EmailErrorMessageDIV=true;
          });

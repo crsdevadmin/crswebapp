@@ -2,24 +2,22 @@
 <html lang="en">
 
 <head>
-<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-<script type="text/javascript" src="assets/js/email.js"></script>
-
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Cloud Ring Solutions</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+<script	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo3.png" rel="icon">
+  <link href="assets/img/logo3.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -28,6 +26,8 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+ 
+<!-- Template Main JS File -->
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -37,22 +37,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  
-  <style>
-        .blink {
-            animation: blinker 1.5s linear infinite;
-            color: black;
-            font-family: sans-serif;
-        }
-        @keyframes blinker {
-            50% {
-                opacity: 0;
-            }
-        }
-    </style>
 </head>
 
-<body ng-app="sendEmail">
+<body >
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
@@ -65,18 +52,57 @@
    
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#events">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Courses</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Courses</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+           <li><a class="nav-link scrollto" href="#about">About</a></li>
+           <!--  <li><a class="nav-link scrollto" href="#services">Course Detail</a></li> -->
+        
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row" data-aos="fade-in">
+        <div class="col-lg-6">
+          <h2><span></span></h2>
+        </div>
+      </div>
+    </div>
+</section>
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container" data-aos="zoom-out" data-aos-delay="100" >
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>100% Placement Assurance</h1>
+          <h2>A way to get your dream job in IT</h2>
+          <h3> Personalized Training | Real Time Project | Industry Collaboration </h3>
+          <div id="registeredUsers" >
+				<div class="row" style="align-items: end;"">
+		   		<div class="col-lg-6">
+				      <button type="button" class="btn-get-started scrollto">
+						  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdew0TyoySupxx6iIJUcIc23KSIGdHdzIE_OLH9oLz_c8Y-Nw/viewform?usp=sf_link" target="_blank">Apply Now
+						  </a>
+						  </button>
+				</div>
+					
+				</div>
+		</div>
+        </div>
+          <div class="col-lg-6">
+                  <img src="assets/img/hero.png" class="img-fluid event-img" alt="">
+                </div>
+          
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
 
   <!-- ======= events Section ======= -->
   <section id="events" class="events">
@@ -189,7 +215,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
           <div class="col-xl-3 col-md-6 animated" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-microsoft"></i></div>
-              <h4 class="title"><a href="#pricing" class="stretched-link">MS OFFICE</a></h4>
+              <h4 class="title"><a href="#pricing" class="stretched-link">AUTOMATION TESTING</a></h4>
             </div>
           </div><!--End Icon Box -->
                  </div>
@@ -346,8 +372,8 @@ We provide ongoing support and feedback throughout the personalized training.</l
       <div class="container">
 
         <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Our cources</p>
+          <h2>Course Details</h2>
+          <p>Our courses</p>
         </div>
 
         <div class="row">
@@ -355,19 +381,24 @@ We provide ongoing support and feedback throughout the personalized training.</l
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box recommended" data-aos="zoom-in-right" data-aos-delay="200">
               <h3>Full Stack Developer</h3>
-              <h4><sup>₹</sup>35000<span></span></h4>
+             <!--  <h4><sup>₹</sup>35000<span></span></h4> -->
               <ul>
                 <li>HTML</li>
                 <li>Bootstrap</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
                 <li>Angular JS</li>
                 <li>Core Java</li>
                 <li>Spring Boot with JPA</li>
                 <li>SQL Database</li>
-                <li>Live Project</li>
+                <li>Eclipse Maven</li>
+                <li>Git Hub</li>
+                <li>Real Time Project Project</li>
                 
               </ul>
+              <div class="na">------</div>
               <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
+                <a href="#contact" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -375,15 +406,18 @@ We provide ongoing support and feedback throughout the personalized training.</l
           <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
             <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
               <h3>Front End Developer</h3>
-               <h4><sup>₹</sup>15000<span></span></h4>
+               <!-- <h4><sup>₹</sup>15000<span></span></h4> -->
               <ul>
                 <li>HTML</li>
                 <li>Bootstrap</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
                 <li>Angular JS</li>
-                <li>Live Project</li>
+                <li>Git Hub</li>
+                <li>Real Time Project Project</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
+                <a href="#contact" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -391,28 +425,33 @@ We provide ongoing support and feedback throughout the personalized training.</l
           <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <div class="box recommended" data-aos="zoom-in-left" data-aos-delay="200">
               <h3>Back End Developer</h3>
-             <h4><sup>₹</sup>20000<span></span></h4>
+             <!-- <h4><sup>₹</sup>20000<span></span></h4> -->
              <ul>
                 <li>Core Java</li>
                 <li>Spring Boot with JPA</li>
                 <li>SQL Database</li>
-                <li>Live Project</li>
+                <li>Eclipse Maven</li>
+                <li>Git Hub</li>
+                <li>Real Time Project Project</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
+                <a href="#contact" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
         <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
             <div class="box recommended" data-aos="zoom-in-left" data-aos-delay="200">
-              <h3>Core Java Developer</h3>
-             <h4><sup>₹</sup>7000<span></span></h4>
+              <h3>Automation Testing</h3>
+            <!--  <h4><sup>₹</sup>5000<span></span></h4> -->
              <ul>
-                <li>Core Java</li>
-                <li>Live Project</li>
+                <li>Python</li>
+                <li>Manual Testing</li>
+                <li>Automation Testing using Selenium</li>
+                <li>Git Hub</li>
+                <li>Real Time Project</li>
               </ul>
               <div class="btn-wrap">
-                <a href="#contact" class="btn-buy">Buy Now</a>
+                <a href="#contact" class="btn-buy">Enroll Now</a>
               </div>
             </div>
           </div>
@@ -423,6 +462,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
     </section><!-- End Pricing Section -->
 
     <!-- ======= Services Section ======= -->
+<!-- 
     <section id="services" class="services">
       <div class="container">
 
@@ -435,7 +475,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <a href="#contact" style="color:black">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <!-- <div class="icon"><img src="assets/img/client6.png" class="img-fluid"/></div> -->
+              <div class="icon"><img src="assets/img/client6.png" class="img-fluid"/></div>
               <h4 class="title">HTML</h4>
               <p class="description"></p>
                <ul>
@@ -452,7 +492,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
           </div>
            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <a href="#contact" style="color:black"><div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-             <!--  <div class="icon"><img src="assets/img/client6.png" class="img-fluid"/></div> -->
+              <div class="icon"><img src="assets/img/client6.png" class="img-fluid"/></div>
               <h4 class="title">Angular JS</h4>
               <p class="description"></p>
               <ul>
@@ -470,7 +510,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
           
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
              <a href="#contact" style="color:black"><div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-             <!--    <div class="icon"><img src="assets/img/client1.png" class="img-fluid"/></div>-->
+             <div class="icon"><img src="assets/img/client1.png" class="img-fluid"/></div>
               <h4 class="title">Core Java</h4>
               <p class="description"></p>
                <ul>
@@ -490,7 +530,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <a href="#contact" style="color:black"> <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-               <!--  <div class="icon"><img src="assets/img/client2.png" class="img-fluid"/></div>-->
+               <div class="icon"><img src="assets/img/client2.png" class="img-fluid"/></div>
               <h4 class="title">Spring Boot</h4>
               <p class="description"> </p>
                 <ul>
@@ -510,7 +550,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
              <a href="#contact" style="color:black">
              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-               <!--  <div class="icon"><img src="assets/img/client5.png" class="img-fluid"/></div>-->
+                <div class="icon"><img src="assets/img/client5.png" class="img-fluid"/></div>
               <h4 class="title">SQL Database</h4>
               <p class="description"></p>
               <ul>
@@ -529,7 +569,7 @@ We provide ongoing support and feedback throughout the personalized training.</l
  		<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
              <a href="#contact" style="color:black">
              <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-           <!--      <div class="icon"><img src="assets/img/client7.png" class="img-fluid"/></div>-->
+            <div class="icon"><img src="assets/img/client7.png" class="img-fluid"/></div>
               <h4 class="title">BootStrap</h4>
               <p class="description"></p>
               <ul>
@@ -546,7 +586,9 @@ We provide ongoing support and feedback throughout the personalized training.</l
 
       </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
+     -->
+    <!-- End Services Section -->
 
     
     <!-- ======= Contact Section ======= -->
@@ -564,10 +606,10 @@ We provide ongoing support and feedback throughout the personalized training.</l
               <h3>Cloud Ring Solutions</h3>
               <p>You can connect with us on..</p>
               <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100092707688562" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100092707688562" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/cloudringsolutions/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.instagram.com/cloudringsolutions/" class="linkedin"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -586,33 +628,10 @@ We provide ongoing support and feedback throughout the personalized training.</l
 
               <div>
                 <i class="ri-phone-line"></i>
-                <p>+91 99629-81885</p>
+                <p>+91 44350-07611 | +91 79048-36241</p>
               </div>
 
             </div>
-          </div>
-
-          <div class="login-form col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300" ng-controller="sendEmailCtrl">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" ng-model="name" required >
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"  ng-model="email" required>
-              </div>
-              <div class="form-group">
-                <input type="tel"  pattern="[0-9]{4}[0-9]{3}[0-9]{3}" class="form-control" name="contact" id="contact" placeholder="contact number "  ng-model="contact" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Enter Message" id="message" ng-model="message"  required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="form-group" id="EmailErrorMessageDIV=true;">
-					<span class="label label-danger">{{ loginMsg }}</span>
-				</div>
-              </div>
-              <div class="text-center"><button type="submit" ng-click="sendEmail()">Send Message</button></div>
-            </form>
           </div>
 
         </div>
@@ -678,7 +697,7 @@ We also provide hands-on training and practical experience, which helps students
         </div>
         <div class="col-lg-6">
           <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
-            <a href="#intro" class="scrollto">Home</a>
+            <a href="#hero" class="scrollto">Home</a>
             <a href="#about" class="scrollto">About</a>
     
           </nav>
@@ -689,7 +708,7 @@ We also provide hands-on training and practical experience, which helps students
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
+ <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -697,8 +716,10 @@ We also provide hands-on training and practical experience, which helps students
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-<!-- Template Main JS File -->
+
   <script src="assets/js/main.js"></script>
+  
+
 
 </body>
 

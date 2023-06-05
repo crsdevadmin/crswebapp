@@ -12,6 +12,8 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
+import com.source.util.Utilities;
+
 //Annotation
 @Service
 //Class
@@ -26,7 +28,7 @@ public class EmailServiceImpl implements EmailService {
 	// To send a simple email
 	public String sendSimpleMail(EmailDetails details)
 	{
-
+		Utilities util = new Utilities();
 		// Try block to check for exceptions
 		try {
 
@@ -42,12 +44,12 @@ public class EmailServiceImpl implements EmailService {
 			System.out.println(details.getRecipient()+" "+details.getSubject()+" "+details.getMsgBody());
 			// Sending the mail
 			javaMailSender.send(mailMessage);
-			return "Mail Sent Successfully...";
+			return util.setSucessReponse(true, "Thanks for registering with us, We will connect with you shortly");
 		}
 
 		// Catch block to handle the exceptions
 		catch (Exception e) {
-			return "Error while Sending Mail";
+			return util.setFailureReponse(false, e);
 		}
 	}
 

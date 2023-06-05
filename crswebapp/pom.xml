@@ -7,8 +7,6 @@
   <name>crs admin project</name>
   <description>crs admin project</description>
   <properties><java.version>1.8</java.version> 
-      <tomcat.version>9.0.73</tomcat.version>
-  
   </properties>
   <packaging>war</packaging>
 
@@ -67,7 +65,7 @@
 	</dependency>
   </dependencies>
   <build>
-  <finalName>ROOT</finalName>
+  <finalName>crswebapp</finalName>
   <plugins>
  	 <plugin>
     	<groupId>org.springframework.boot</groupId>
